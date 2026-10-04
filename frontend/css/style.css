@@ -269,7 +269,7 @@ h1 {
   border-radius: 11px;
 
   background: var(--accent);
-  color: white;
+  color: rgb(255, 255, 255);
 
   font-size: 14px;
   font-weight: 800;
@@ -277,7 +277,7 @@ h1 {
 
   cursor: pointer;
 
-  box-shadow: 0 8px 20px rgba(79, 140, 255, 0.18);
+  box-shadow: 0 8px 20px rgba(37, 19, 151, 0.18);
 
   transition:
     background 0.2s ease,
@@ -289,7 +289,7 @@ h1 {
 .check-button:hover:not(:disabled) {
   background: var(--accent-hover);
   transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(79, 140, 255, 0.25);
+  box-shadow: 0 10px 24px rgba(6, 42, 109, 0.25);
 }
 
 .check-button:active:not(:disabled) {
@@ -297,7 +297,7 @@ h1 {
 }
 
 .check-button:focus-visible {
-  outline: 3px solid rgba(79, 140, 255, 0.35);
+  outline: 3px solid rgba(1, 7, 19, 0.35);
   outline-offset: 3px;
 }
 
@@ -362,7 +362,7 @@ h1 {
   margin-top: 22px;
 
   text-align: center;
-  color: #718199;
+  color: #c1ac12;
   font-size: 12px;
   line-height: 1.5;
 }
