@@ -1,0 +1,41 @@
+```text
+# ==============================
+# Web Backend
+# ==============================
+fastapi
+uvicorn[standard]
+python-multipart
+
+# ==============================
+# Deep Learning
+# ==============================
+torch
+torchvision
+torchaudio
+
+# ==============================
+# Image Processing
+# ==============================
+opencv-python
+Pillow
+numpy
+
+# ==============================
+# Data Science / Evaluation
+# ==============================
+scikit-learn
+pandas
+matplotlib
+
+# ==============================
+# Model / Experiment Utilities
+# ==============================
+tqdm
+PyYAML
+
+# ==============================
+# Testing
+# ==============================
+pytest
+httpx
+```

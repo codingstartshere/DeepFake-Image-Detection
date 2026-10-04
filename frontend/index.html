@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Image Authenticity Checker</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <main class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Image Analysis
+      </div>
+
+      <h1>Image Authenticity Checker</h1>
+
+      <p class="subtitle">
+        Upload an image to preview it before checking whether it is
+        authentic or AI-generated.
+      </p>
+    </header>
+
+
+    <!-- Upload / Preview -->
+    <section
+      class="upload-area"
+      id="uploadArea"
+      aria-label="Image upload area"
+    >
+
+      <!-- Initial upload state -->
+      <div class="upload-prompt" id="uploadPrompt">
+
+        <div class="upload-icon" aria-hidden="true">
+          ↑
+        </div>
+
+        <h2>Select an image</h2>
+
+        <p>
+          JPG, JPEG, PNG or WEBP
+        </p>
+
+        <label
+          for="imageInput"
+          class="browse-button"
+        >
+          Choose Image
+        </label>
+
+      </div>
+
+
+      <!-- Image preview state -->
+      <div
+        class="preview-wrapper"
+        id="previewWrapper"
+      >
+        <img
+          id="imagePreview"
+          src=""
+          alt="Selected image preview"
+        />
+      </div>
+
+    </section>
+
+
+    <!-- Hidden file input -->
+    <input
+      id="imageInput"
+      type="file"
+      accept="image/jpeg,image/png,image/webp"
+    />
+
+
+    <!-- Check button -->
+    <button
+      id="checkButton"
+      class="check-button"
+      type="button"
+      disabled
+    >
+      CHECK
+    </button>
+
+
+    <!-- Result -->
+    <section
+      class="result"
+      aria-live="polite"
+      aria-label="Image authenticity result"
+    >
+      <div class="result-label">
+        Prediction
+      </div>
+
+      <div
+        id="resultValue"
+        class="result-value placeholder"
+      >
+        —
+      </div>
+
+      <p
+        id="resultDescription"
+        class="result-description"
+      >
+        Upload an image to begin.
+      </p>
+    </section>
+
+
+    <p class="footer">
+      Front-end demonstration only. No image is uploaded or analyzed
+      by a server.
+    </p>
+
+  </main>
+
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
