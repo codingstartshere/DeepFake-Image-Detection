@@ -43,4 +43,4 @@ This project is developed for **educational and research purposes** to explore d
 
 ## License
 
-This repository is intended for educational and research use.
+This repository is intended for educational and research use only.
